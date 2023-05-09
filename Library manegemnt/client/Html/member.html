@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management System - Member Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Library Management System - Member Page</h1>
+  </header>
+  <main>
+    <section id="books-section">
+      <h2>Available Books</h2>
+      <table id="books-table">
+        <thead>
+          <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="books-list"></tbody>
+      </table>
+    </section>
+    <section id="borrowed-books-section">
+      <h2>Borrowed Books</h2>
+      <table id="borrowed-books-table">
+        <thead>
+          <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="borrowed-books-list"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="../Javscript/member.js"></script>
+  <script>
+    // Inside the member.js file
+    document.addEventListener("DOMContentLoaded", function() {
+      // Fetch available books and populate the table
+      fetchAvailableBooks();
+    });
+  </script>
+</body>
+</html>
